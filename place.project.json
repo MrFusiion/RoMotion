@@ -25,10 +25,6 @@
 			"Roact": {
 				"$path": "modules/Roact/src"
 			  },
-
-			"TestEZ": {
-				"$path": "modules/testez/src"
-			}
 		},
 
 		"Players": {
