@@ -23,7 +23,7 @@
 			},
 
 			"Roact": {
-				"$path": "modules/Roact/src"
+				"$path": "modules/roact/src"
 			}
 		},
 
