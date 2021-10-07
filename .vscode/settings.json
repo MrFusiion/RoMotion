@@ -1,6 +1,0 @@
-{
-    "files.trimTrailingWhitespace": true,
-    "robloxLsp.diagnostics.disable": [
-        "undefined-doc-name"
-    ]
-}
