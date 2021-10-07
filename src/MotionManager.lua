@@ -24,7 +24,6 @@ end
 
 function Motions.new(engine: table, motions: table)
     assert(engine~=nil, "Bad argument #1 Engine required got nil!")
-
     return setmetatable({
         [Intr] = {
             Motions = motions,
@@ -42,6 +41,18 @@ function Motions:setGoals(goals: table)
             else
                 motion:setGoal(goal)
             end
+            self[Intr].Engine:run(motion)
+        else
+            warn(WARN_COULD_NOT_FIND:format(name))
+        end
+    end
+end
+
+function Motions:jumpGoals(goals: table)
+    for name, goal in pairs(goals) do
+        local motion = self[Intr].Motions[name]
+        if motion then
+            motion:jump(goal)
             self[Intr].Engine:run(motion)
         else
             warn(WARN_COULD_NOT_FIND:format(name))
