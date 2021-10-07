@@ -63,7 +63,7 @@ end
 
 
 -- Set the value instant
-function Motion:set(target: any)
+function Motion:jump(target: any)
     self.SetBinding(target)
 end
 
