@@ -24,7 +24,7 @@
 
 			"Roact": {
 				"$path": "modules/Roact/src"
-			  },
+			}
 		},
 
 		"Players": {
