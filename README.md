@@ -56,8 +56,8 @@ Supported Values:
 ```lua
 local MyComponent = RoMotion.addMotion({
     transparency = {
-        value = .5,
-        tweeninfo = TweenInfo.new(.5, Enum.EasingStyle.Sine)
+        value = 0.5,
+        tweeninfo = TweenInfo.new(0.5, Enum.EasingStyle.Sine)
     }
 })(MyComponent)
 ```
@@ -67,9 +67,9 @@ local MyComponent = RoMotion.addMotion({
 ```lua
 local MyComponent = RoMotion.addMotion({
     transparency = {
-        defaultValue = .5,
+        defaultValue = 0.5,
         value = RoMotion.Prop.Transparency,
-        tweeninfo = TweenInfo.new(.5, Enum.EasingStyle.Sine)
+        tweeninfo = TweenInfo.new(0.5, Enum.EasingStyle.Sine)
     }
 })(MyComponent)
 ```
@@ -94,7 +94,7 @@ local function MyComponent(props)
         end,
         [Roact.Event.MouseLeave] = function()
             motions:setGoals({
-                transparency = .5,
+                transparency = 0.5,
             })
         end
     })
