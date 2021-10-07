@@ -20,7 +20,7 @@ local function getValue(value: any, defaultValue: any, props: table)
     end
 end
 
-return function (motionData: table): (Roact.Component | (props: table, state: table) -> (Roact.Element)) -> (Roact.Component)
+return function (motionData: table): (Roact.Component) -> (Roact.Component)
     return function(component)
         local componentName = ("RoMotionConnection(%s)"):format(tostring(component))
 
