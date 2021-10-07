@@ -1,0 +1,41 @@
+{
+	"name": "RoMotion",
+	"tree": {
+		"$className": "DataModel",
+
+		"StarterPlayer": {
+			"$className": "StarterPlayer",
+
+			"StarterPlayerScripts": {
+				"$className": "StarterPlayerScripts",
+
+				"RoMotionExamples": {
+					"$path": "examples"
+				}
+			}
+		},
+
+		"ReplicatedStorage": {
+			"$className": "ReplicatedStorage",
+
+			"RoMotion": {
+				"$path": "src"
+			},
+
+			"Roact": {
+				"$path": "modules/Roact/src"
+			  },
+
+			"TestEZ": {
+				"$path": "modules/testez/src"
+			}
+		},
+
+		"Players": {
+			"$className": "Players",
+			"$properties": {
+			  "CharacterAutoLoads": false
+			}
+		}
+	}
+}
